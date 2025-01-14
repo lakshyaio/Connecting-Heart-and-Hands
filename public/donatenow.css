@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/photos/saves.jpg');
+    background-position: center;
+    /* Reduce the brightness by adjusting the opacity */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value to control opacity */
+    background-blend-mode: multiply; /* Light gray background */
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white container background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+}
+
+.container1:hover {
+    color: #fff; /* White text on hover */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.header h1 {
+    color: #333333; /* Darker title color */
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.about-us {
+    margin-bottom: 30px; /* Increased margin */
+    text-align: justify;
+    color: #555555; /* Slightly darker text color */
+}
+
+.donate-button {
+    display: inline-block; /* Changed to inline-block to fit better */
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px 20px; /* Increased padding */
+    background-color: #dc3545; /* Red donate button color */
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px; /* Rounded button corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+    font-weight: bold; /* Bold text */
+}
+
+.donate-button:hover {
+    background-color: black;
+     /* Red background on hover */
+}

@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/photos/abled.webp');
+    background-position: center;
+    /* Reduce the brightness by adjusting the opacity */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value to control opacity */
+    background-blend-mode: multiply; /* Blend the background color with the image */
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#ngoList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.ngo {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.3s ease, height 0.3s ease; /* Add transition */
+}
+
+.ngo:hover {
+    background-color: #fff; /* Change to white on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: calc(100% + 10px); /* Increase width */
+    height: calc(100% + 10px); /* Increase height */
+}
+
+
+
+.donate-button {
+    background-color: #d30415;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.donate-button:hover {
+    background-color: #8a2f37;
+}
+
+@media screen and (max-width: 768px) {
+    .container2 {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 20px);
+    }
+
+    button {
+        width: calc(100% - 40px);
+    }
+
+    #ngoList {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+
+    .container2 {
+        padding-top: 90px;
+    }
+}
+
+/* Styles for the heading */
+.hello {
+    padding-top: 0px;
+    margin-bottom: 30px;
+    font-size: 50px;
+   
+}
+
+u {
+    color: brown;
+}
+
+h1 {
+    color: white;
+    /* No hover effect for the "Agriculture" heading */
+}
+
+
+h1.hello {
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.5); /* Add transparent background */
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Add rounded corners */
+    display: inline-block; /* Ensure the background only wraps the text */
+}
+#searchButton{
+    background-color:#d30415;
+}
+
+.search-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Add margin between search input and button */
+#searchBar {
+    margin-right: 10px; /* Adjust this value as needed */
+}

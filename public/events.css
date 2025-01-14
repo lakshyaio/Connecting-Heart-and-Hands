@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/photos/backer.jpeg');
+    background-position: center;
+    /* Reduce the brightness by adjusting the opacity */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value to control opacity */
+    background-blend-mode: multiply; /* Bl Prevent background image from repeating */
+}
+
+
+.container3 {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.event {
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color:black; /* Updated background color */
+}
+
+.event-image {
+    min-width: 150px; /* Adjust as needed */
+    margin-right: 20px;
+    border-radius: 15px 0 0 15px; /* Add border-radius */
+    flex: 0 0 auto; /* Don't allow image to grow or shrink */
+    background-color:white; /* Light color for image background */
+    order: 1; /* Start with image on the left */
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Make image responsive */
+    border-radius: 15px 0 0 15px; /* Add border-radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to image */
+}
+
+.event-details {
+    flex: 1 1 auto; /* Allow description to grow, but not shrink */
+    order: 0; /* Start with description on the right */
+    background-color: rgba(255, 0, 0, 0.573); /* Light color for description background */
+    border-radius: 0 15px 15px 0; /* Add border-radius */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 0 20px; /* Add padding to align content */
+}
+
+.event:hover {
+    transform: translateY(-5px); /* Move div 5px up on hover */
+}
+
+.event-details h2 {
+    margin-top: 0;
+    color: #fff; /* Text color */
+    font-size: 1.2em; /* Increase font size */
+    margin-bottom: 10px;
+    text-align: center; /* Center text */
+}
+
+.event-details p {
+    color: #f0f0f0; /* Text color */
+    margin-bottom: 10px;
+    text-align: center; /* Center text */
+}
+
+.button {
+    display: inline-block;
+    background-color: #fff; /* Button color */
+    color: #0c0c0c; /* Text color */
+    padding: 8px 16px; /* Adjust padding */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add margin for separation */
+    align-self: center; /* Center button horizontally */
+}
+
+.button:hover {
+    background-color: #f0f0f0; /* Darker button color on hover */
+}
+
+/* Alternate layout for even rows */
+.event:nth-child(even) .event-image {
+    order: 0; /* Image on the right */
+    border-radius: 0 15px 15px 0; /* Add border-radius */
+}
+
+.event:nth-child(even) .event-details {
+    order: 1; /* Description on the left */
+    border-radius: 15px 0 0 15px; /* Add border-radius */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .event {
+        flex-direction: column;
+    }
+    .event-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        border-radius: 15px 15px 0 0; /* Adjust border-radius */
+    }
+    .event-details {
+        border-radius: 0 0 15px 15px; /* Adjust border-radius */
+  }
+}
+
+.container3 {
+    padding-top: 80px;
+}
+
+.container3 #eventsContainer {
+    margin-top: 60px;
+}
+.button {
+    display: inline-block;
+    background-color: #fff; /* Button color */
+    color: #0c0c0c; /* Text color */
+    padding: 8px 16px; /* Adjust padding */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition */
+    margin-top: 10px; /* Add margin for separation */
+    align-self: center; /* Center button horizontally */
+}
+
+.button:hover {
+    background-color: black; /* Darker button color on hover */
+    color: white; /* Change text color on hover */
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOLARSHIP</title>
+    <link rel="icon" type="image/jpeg" href="/photos/logo.jpg"/>
+
+</head>
+<body>
+  
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/hello.css">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/photos/download.jpg" alt="NGO logo"/>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/views/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/views/ngos.html">Donate</a>
+                    </li>
+                    <li>
+                    <div class="dd">
+
+                        <button class="dd-btn">Topics</button>
+                        <div class="dd-content">
+                            <a href="/views/health.html">Health</a>
+                        <a href="/views/agriculture.html">Agriculture</a>
+                        <a href="/views/rural.html">Rural Development</a>
+                        <a href="/views/right.html">Justice & Equality</a>
+                        </div>
+                    </div>
+
+                    </li>
+                    <li>
+                        <a href="/views/events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="/views/mission.html">Missions</a>
+                    </li>
+                    <li>
+                        <a href="/views/team.html">Our Team</a>
+                    </li>
+                    <% if (isLoggedIn) { %>
+                        <!-- If logged in, show user information and logout option -->
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Welcome, <%= user.name %></a>
+                                <div class="dropdown-content">
+                                    <a href="/logout">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    <% } else { %>
+                        <!-- If not logged in, show login option -->
+                        <li><a href="/login">Login</a></li>
+                    <% } %> 
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container2">
+        <h1>Search NGOs</h1>
+        <input type="text" id="searchBar" placeholder="Search NGOs">
+        <button id="searchButton">Search</button>
+    </div><center><u>
+        <h1 class="hello">GIVE SCHOLARSHIP</h1></u></center>
+
+    <main id="ngoList" class="container">
+        <!-- NGO listings will be dynamically generated here -->
+    </main>
+    <script src="/models/education.js"></script>
+
+    <section class="content">
+    
+    </section>
+    
+    <footer class="footer">
+        <div class="container row">
+            <div class="footer-col">
+                <h4>Donate</h4>
+                <ul>
+                    <li><a href="/views/ngo2.html">Donate Now</a></li><br>
+                    <li><a href="/views/mission.html">Ways to Give</a></li><br>
+                    <li><a href="#">Impact Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Volunteer</h4>
+                <ul>
+                    <li><a href="/views/events.html">Volunteer Opportunities</a></li><br>
+                    <li><a href="/views/donate.html">How to Volunteer</a></li><br>
+                    <li><a href="#">Volunteer Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Scholarship</h4>
+                <ul>
+                    <li><a href="/views/education.html">Scholarship Opportunities</a></li><br>
+                    <li><a href="/views/donate.html">How to Apply</a></li><br>
+                    <li><a href="#">School Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Learn More</h4>
+                <ul>
+                    <li><a href="/views/team.html">Our Team</a></li><br>
+                    <li><a href="/views/index.html">Our Work</a></li><br>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/zqPgBzU3kXwA1nGF/?mibextid=qi2Omg"><img src="/photos/fb.jpg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/aryan477x?igsh=ZmNtZ3Y4eDJ0ODVi"><img src="/photos/insta.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/aryansharma07?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="/photos/linked.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

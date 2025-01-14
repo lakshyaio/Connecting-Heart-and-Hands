@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('/photos/team.webp');
+        background-position: center;
+        /* Reduce the brightness by adjusting the opacity */
+        background-color: rgba(79, 77, 77, 0.7); /* Adjust the alpha value to control opacity */
+        background-blend-mode: multiply; /* Blend the background color with the image */
+    
+}
+
+h1{
+    text-align: center;
+    border-bottom: 3px solid black;
+    display: block;
+    padding: 5px;
+    margin: 80px auto 50px;
+    width: 300px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+    font-size: 40px;
+   
+}
+
+.team-container{
+    width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.box{
+    width: 350px;
+    box-shadow: 0 0 5px 0 #0000001f;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-top: 80px;
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.user-icon{
+    overflow: hidden;
+    height: 130px;
+    width: 130px;
+    border-radius: 70px;
+    margin: -80px 0 0 0;
+}
+
+.user-icon img{
+    width: 100%;
+}
+
+.user-name{
+    margin: 15px 0 0;
+    font-weight: 300;
+    color: #000; /* Set default color to black */
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.designation{
+    color: #e65454;
+    font-weight: 600;
+}
+
+.user-info{
+    margin: 10px 0 0;
+    background-color: #ececec;
+    padding: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+@media screen and (max-width:1140px){
+    .team-container{
+        width: 95%;
+        justify-content: space-around;
+    }
+}
+
+.box:hover {
+    transform: scaleX(1.02);
+    background-color: black; /* Change background color on hover */
+    color:white;
+}
+
+.box:hover .user-name {
+    color: #fff; /* Change text color to white on hover */
+}

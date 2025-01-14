@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Event 1",
+        "time": "April 1st, 2024, 10:00 AM - 12:00 PM",
+        "place": "Community Hall, XYZ Street, City",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mauris quis ligula dignissim consequat.",
+        "ngoName": "Your NGO Name",
+        "volunteerLink": "https://hpgorkhaassociation.org/events/",
+        "image": "/photos/1.jpg"
+    },
+    {
+        "title": "Event 2",
+        "time": "April 5th, 2024, 2:00 PM - 4:00 PM",
+        "place": "Park Avenue, City",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mauris quis ligula dignissim consequat.",
+        "ngoName": "Your NGO Name",
+        "volunteerLink": "https://smilehimachal.org/?p=1029",
+        "image": "/photos/1.jpg"
+
+    },
+    {
+        "title": "Event 3",
+        "time": "April 10th, 2024, 9:00 AM - 11:00 AM",
+        "place": "City Hall, Main Street",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mauris quis ligula dignissim consequat.",
+        "ngoName": "Your NGO Name",
+        "volunteerLink": "https://dharmalaya.in/",
+        "image": "/photos/1.jpg"
+    },
+    {
+        "title": "Event 4",
+        "time": "April 15th, 2024, 3:00 PM - 5:00 PM",
+        "place": "Central Park, Downtown",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mauris quis ligula dignissim consequat.",
+        "ngoName": "Your NGO Name",
+        "volunteerLink": "https://ngodarpan.gov.in/index.php/home/statewise_ngo/223/2/1?per_page=100",
+        "image": "/photos/1.jpg"
+    },
+    {
+        "title": "Event 5",
+        "time": "April 20th, 2024, 11:00 AM - 1:00 PM",
+        "place": "Community Center, Riverside",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mauris quis ligula dignissim consequat.",
+        "ngoName": "Your NGO Name",
+        "volunteerLink": "https://hptdc.in/index.php/events/",
+        "image": "/photos/1.jpg"
+}
+]
